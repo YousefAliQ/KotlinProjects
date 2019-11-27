@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200sp"
+        android:layout_height="200sp"
+        android:layout_gravity="center"
+        android:layout_margin="30dp"
+        android:padding="30dp"
+        app:srcCompat="@drawable/dd_logo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+
+    <TextView
+        android:id="@+id/showFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Tofo" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+
+    <EditText
+        android:id="@+id/addFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="What you would like to add ?"
+        android:inputType="textPersonName" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+
+    <Button
+        android:id="@+id/addFoodBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="ADD FOOD" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20sp" />
+
+    <Button
+        android:id="@+id/desideBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="DECIDE!" />
+</androidx.appcompat.widget.LinearLayoutCompat>
