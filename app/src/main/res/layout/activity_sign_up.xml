@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".SignInActivity">
+    tools:context=".SignUpActivity">
 
     <ImageView
         android:id="@+id/imageView6"
@@ -18,7 +18,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
-        android:text="Sign in to your account"
+        android:text="Create your account"
         android:textSize="35sp"
         android:textStyle="bold" />
 
@@ -29,7 +29,18 @@
         android:layout_marginLeft="30sp"
         android:layout_marginTop="50sp"
         android:layout_marginRight="30sp"
-        android:text="Email address (required)"
+        android:text="* required fields"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:text="First name*"
         android:textSize="20sp" />
 
     <EditText
@@ -39,16 +50,54 @@
         android:layout_marginLeft="30sp"
         android:layout_marginRight="30sp"
         android:ems="10"
-        android:inputType="textEmailAddress" />
+        android:inputType="textPersonName" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="30sp"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="10sp"
         android:layout_marginRight="30sp"
-        android:text="Password (required)"
+        android:text="Last name*"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:text="Email Address*"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginRight="30sp"
+        android:ems="10"
+        android:inputType="textEmailAddress" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30sp"
+        android:layout_marginTop="10sp"
+        android:layout_marginRight="30sp"
+        android:text="Password*"
         android:textSize="20sp" />
 
     <EditText
@@ -60,65 +109,7 @@
         android:ems="10"
         android:inputType="textPassword" />
 
-    <TextView
-        android:id="@+id/forgetPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30sp"
-        android:layout_marginRight="30sp"
-        android:gravity="right"
-        android:scrollbarSize="20sp"
-        android:autoLink="all"
-        android:clickable="true"
-        android:text="Forget password?" />
-
-    <Button
-        android:id="@+id/signInBtn"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="30sp"
-        android:layout_marginTop="50sp"
-        android:layout_marginRight="30sp"
-        android:text="Sign In"
-        android:textColor="@android:color/white"
-        android:textSize="25sp"
-
-
-    />
     <!-- android:background="@drawable/buttonBlue"-->
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <View
-            android:layout_width="90dp"
-            android:layout_height="3dp"
-            android:layout_marginLeft="30sp"
-            android:layout_marginTop="20sp"
-            android:background="@android:color/black" />
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10sp"
-            android:layout_marginTop="10sp"
-            android:layout_marginRight="10sp"
-            android:gravity="center"
-            android:text="Don't have an account?"
-            android:textStyle="bold" />
-
-        <View
-            android:id="@+id/view"
-            android:layout_width="100dp"
-            android:layout_height="3dp"
-            android:layout_marginTop="20sp"
-            android:layout_marginRight="30sp"
-            android:layout_weight="1"
-            android:background="@android:color/black" />
-
-    </LinearLayout>
 
     <Button
         android:id="@+id/createUserBtn"
@@ -127,10 +118,7 @@
         android:layout_marginLeft="30sp"
         android:layout_marginTop="30sp"
         android:layout_marginRight="30sp"
-        android:text="Create a new account"
+        android:text="Create Account"
         android:textColor="#0A4FA3" />
-<!--        android:background="@drawable/buttonWhite"-->
-
-
 
 </LinearLayout>
