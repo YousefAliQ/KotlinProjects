@@ -51,14 +51,14 @@
                 app:srcCompat="@drawable/ipad_pillow_holder_s_d_ipad_cushion_holder_shop_300x300" />
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/imageView6"
                 android:layout_width="200sp"
                 android:layout_height="200sp"
                 android:layout_marginLeft="20sp"
                 android:layout_marginTop="20sp"
                 android:layout_marginRight="20sp"
                 android:layout_marginBottom="20sp"
-                tools:srcCompat="@drawable/baut_b0868_gry"></ImageView>
+                app:srcCompat="@drawable/clothes" />
 
         </TableRow>
 

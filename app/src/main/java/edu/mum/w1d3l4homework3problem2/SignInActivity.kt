@@ -17,13 +17,14 @@ class SignInActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var user :User = User("yousef", "ali", "q", "q")
         var user1 :User = User("yousef", "ali", "yquran@mum.edu", "123")
         var user2 :User = User("yousef2", "ali", "yquran1@mum.edu", "123")
         var user3 :User = User("yousef3", "ali", "yquran2@mum.edu", "123")
         var user4 :User = User("yousef4", "ali", "yquran3@mum.edu", "123")
         var user5 :User = User("yousef5", "ali", "yquran4@mum.edu", "123")
 
-         users = arrayOf(user1, user2, user3, user4, user5);
+         users = arrayOf(user, user1, user2, user3, user4, user5);
 
         signInBtn.setOnClickListener {
             var username = username.text.toString().trim()
